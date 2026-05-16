@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" sizes="32x32" type="image/png"
+        href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+
+</head>
+
+<body>
+
+    <!-- ====================/Navbar section/========================== -->
+
+    <header>
+
+        <nav id="navbar">
+
+            <img class="logo" src="Assets/images/spotify.svg" alt="image doesn't supported">
+
+            <div class="home">
+                <img class="homelogo" src="Assets/images/house-chimney.svg" alt="image doesn't supported">
+                <img class="searchlogo" src="Assets/images/search.svg" alt="image doesn't supported">
+                <input type="text" placeholder="What do you want to play?">
+            </div>
+
+            <div class="profile">
+                <img src="Assets/images/bell.svg" alt="">
+                <img src="Assets/images/people-line.svg" alt="">
+                <button class="profile-btn">P</button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="cards" id="main">
+
+        <!-- ===================/Sidebar Section/========================== -->
+
+        <div class="box box1" id="sidebar">
+
+            <div class="menu-container">
+
+                <div class="menu-bar">
+                    <img class="menu-btn" src="Assets/images/apps-add.svg" alt="">
+                    <h4>Your Library</h4>
+                </div>
+                <div class="menu-icons">
+                    <img class="expand-arrow" src="Assets/images/arrow-up-right-and-arrow-down-left-from-center.svg"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="menu-btns">
+                <button>Artists</button>
+                <button>Podcasts & Shows</button>
+            </div>
+
+            <div class="menu-search">
+                <img src="Assets/images/search.svg" alt="image doesn't supported">
+                <button>Recents <img src="Assets/images/list.svg" alt=""></button>
+            </div>
+
+            <div class="menu-playlist">
+
+                <div class="pl-container img1">
+                    <img class="playlist-img-12" src="Assets/images/download.jpeg" alt="">
+                    <h4>Liked Songs</h4>
+                </div>
+
+                <div class="pl-container img2">
+                    <img class="playlist-img-12" src="https://i.scdn.co/image/ab67656300005f1f59505cd5583dfaea8a52a631"
+                        alt="">
+                    <h4>Current Playlist</h4>
+                </div>
+
+                <div class="pl-container img3">
+                    <img class="playlist-border-radius" src="Assets/images/Arijit Singh_ My digital painting work_.jpeg"
+                        alt="">
+                    <h4>Arijit Singh</h4>
+                </div>
+
+                <div class="pl-container img4">
+                    <img class="playlist-border-radius" src="Assets/images/honey singh.jpeg" alt="">
+                    <h4>Yo Yo Honey Singh</h4>
+                </div>
+
+                <div class="pl-container img5">
+                    <img class="playlist-border-radius" src="Assets/images/Sidhu moose Wala.jpeg" alt="">
+                    <h4>Sidhu Moose Wala</h4>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- ===================/Main Content Section/========================== -->
+
+        <div class="box box2" id="maincontainer">
+
+            <div class="content-bar">
+                <img class="svg" src="Assets/images/apps-add.svg" alt="">
+                <button class="button-1">All</button>
+                <button>Music</button>
+                <button>Podcasts</button>
+            </div>
+
+            <hr>
+
+            <h1 class="heading">Spotify Playlist</h1>
+
+            <div class="spotifyPlaylist">
+
+            </div>
+
+
+            <div class="about-content">
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- ===================/Player-bar Section/========================== -->
+
+
+
+    <footer>
+
+        <!-- this section will be fully functional  -->
+
+        <div id="play-bar">
+
+            <div class="playbartitle">
+
+                <img class="playbarimage invert" src="Assets/images/music-alt.svg" alt="">
+                <h4>Happy Hits!</h4>
+
+            </div>
+
+            <div class="songcontrols">
+
+                <div class="seekbar">
+                    <img src="Assets/images/backward.png" alt="">
+                    <img id="prevBtn" src="Assets/images/step-forward.svg" alt="">
+                    <img id="playbarplaybtn" src="Assets/images/play.svg" alt="">
+                    <img id="nextBtn" src="Assets/images/step-forward.svg" alt="">
+                    <img src="Assets/images/forward.png" alt="">
+                </div>
+
+                <div class="songbar">
+                    <span id="currentTime">00:00</span>
+                    <input type="range" id="seekbar" value="0">
+                    <span id="duration">00:00</span>
+                </div>
+
+            </div>
+
+            <div class="songfunctions">
+
+                <img src="Assets/images/play.png" alt="">
+                <img src="Assets/images/devices.png" alt="">
+                <img src="Assets/images/volume-up.png" alt="">
+                <input type="range" id="volumebar" value="0">
+                <img src="Assets/images/fullscreen.png" alt="">
+                <img src="Assets/images/fullscreen (1).png" alt="">
+
+
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="JavaScript/script.js"></script>
+
+
+</body>
+
+</html>
